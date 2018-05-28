@@ -246,7 +246,7 @@ import UIKit
 extension CBPinEntryView: UITextFieldDelegate {
     @objc func textfieldChanged(_ textField: UITextField) {
         let complete: Bool = textField.text!.count == length
-        delegate?.entryChanged(complete)
+        delegate?.entryChanged!(complete)
     }
 
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
