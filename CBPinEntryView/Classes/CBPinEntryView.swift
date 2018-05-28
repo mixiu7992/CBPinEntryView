@@ -124,7 +124,7 @@ import UIKit
         stackView!.alignment = .fill
         stackView!.axis = .horizontal
         stackView!.distribution = .fillEqually
-        stackView!.spacing = (frame.width - length * frame.height - 30) / CGFloat(length - 1)
+        stackView!.spacing = (frame.width - CGFloat(length) * frame.height - 30) / CGFloat(length - 1)
         stackView!.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(stackView!)
