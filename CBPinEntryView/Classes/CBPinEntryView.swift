@@ -8,8 +8,8 @@
 
 import UIKit
 
-public protocol CBPinEntryViewDelegate: class {
-    func entryChanged(_ completed: Bool)
+@objc public protocol CBPinEntryViewDelegate: class {
+    @objc optional func entryChanged(_ completed: Bool)
 }
 
 @IBDesignable open class CBPinEntryView: UIView {
