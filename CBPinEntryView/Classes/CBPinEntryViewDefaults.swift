@@ -11,7 +11,7 @@ import Foundation
 struct CBPinEntryViewDefaults {
 
     // Default number of fields
-    static let length: Int = 4
+    static let length: Int = 6
     
     // Default spacing between fields
     static let spacing: CGFloat = 10
