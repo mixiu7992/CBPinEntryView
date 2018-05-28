@@ -124,13 +124,13 @@ import UIKit
         stackView!.alignment = .fill
         stackView!.axis = .horizontal
         stackView!.distribution = .fillEqually
-        stackView!.spacing = spacing
+        stackView!.spacing = (frame.width - length * frame.height - 30) / CGFloat(length - 1)
         stackView!.translatesAutoresizingMaskIntoConstraints = false
         
         self.addSubview(stackView!)
         
-        stackView!.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0).isActive = true
-        stackView!.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0).isActive = true
+        stackView!.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15).isActive = true
+        stackView!.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15).isActive = true
         stackView!.topAnchor.constraint(equalTo: topAnchor, constant: 0).isActive = true
         stackView!.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
     }
