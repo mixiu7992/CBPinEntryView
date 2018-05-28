@@ -83,7 +83,7 @@ import UIKit
     @IBInspectable open var keyboardType: Int = CBPinEntryViewDefaults.keyboardType
 
     private var stackView: UIStackView?
-    private var textField: UITextField!
+    open var textField: UITextField!
 
     fileprivate var errorMode: Bool = false
 
